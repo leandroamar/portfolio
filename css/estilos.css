@@ -2,10 +2,19 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
 }
-h1 {
+h1{
     color: #E20000;
     font-size: 36px;
 }
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 14px; 
+    color:#282828;
+    font-weight: 300;
+}
+
 p {
     color: #6a6a6a;
     font-size: 16px;
@@ -20,14 +29,78 @@ p {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-#proyectos footer a, #sobre-mi footer a{
-    color: #E20000;
-}
+
 #proyectos footer .fa-whatsapp, #sobre-mi footer .fa-whatsapp{
     color: white;
 }
 .form-control{
     border-radius: 16px;
+}
+#inicio .input-home p{
+    color:white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+#sobre-mi .card{
+    height: 182px;
+}
+#idiomas .card-idioma{
+    border-radius: 15px;
+}
+#idiomas .card{
+    background-color: #370A6D;
+    border-radius: 15px;
+    padding: 40px 0;
+}
+#idiomas{
+    background-color: #eee;
+}
+#idiomas h2{
+    font-size: 16px;
+    font-weight: 600px;
+}
+#idiomas ul{
+    padding: 0px;
+    font-size: 14px;
+    color: #282828;
+    list-style-type: none;
+}
+#idiomas .fas{
+    font-size: 80px;
+    color: white;
+}
+#experiencia h2, #experiencia h4 {
+   color: #370A6D;
+}
+#experiencia h2, #formacion h2 {
+    font-weight: 400;
+    font-size: 24px
+}
+#formacion h2, #formacion h4{
+    color: #E20000;
+}
+#experiencia h3, #formacion h3{
+    color: #6A6A6A;
+    font-size: 18px;
+    font-weight: 600;
+}
+#experiencia h4, #formacion h4{
+    font-size: 17px;   
+}
+#experiencia h5, #formacion h5{
+    color: #6A6A6A;
+    font-size: 14px;
+}
+
+#tecnologias{
+    background-color: #E20000;
+}
+
+input, textarea, .btn {
+    border-radius: 15px !important;
 }
 textarea{
     height: 150px;
@@ -74,6 +147,14 @@ nav .navbar-toggler{
     color: white;
     background-color: #370a6d;
 }
+.img-circle {
+    margin: 1em auto;
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
 footer{
     font-weight: 100;
     bottom: 0px;
@@ -81,10 +162,17 @@ footer{
 footer a{
     color: white;
 }
-footer .fa-facebook{
-    font-size: 35px;
+footer a:hover{
+    color: #370a6d;
 }
-footer .fa-instagram{
+#proyectos footer a, #sobre-mi footer a{
+    color: #E20000;
+}
+
+footer .fa-github {
+    font-size: 34px;
+}
+footer .fa-linkedin-in {
     color: #E20000;
     font-size: 25px;
     border-radius: 100px;
@@ -92,10 +180,11 @@ footer .fa-instagram{
     border: 0px;
     text-align: center;
     padding: 5px;
-    height: 35px;
-    width: 35px;
+    height: 34px;
+    width: 34px;
 }
-#proyectos footer .fa-instagram, #sobre-mi footer .fa-instagram {
+
+#proyectos footer .fa-linkedin-in, #sobre-mi footer .fa-linkedin-in {
     color: white;
     font-size: 25px;
     border-radius: 100px;
@@ -106,16 +195,28 @@ footer .fa-instagram{
     height: 35px;
     width: 35px;
 }
-footer .fa-instagram:hover{
-    color: #E20000;
+#proyectos footer .fa-linkedin-in:hover, #sobre-mi footer .fa-linkedin-in:hover {
+    color: white;
     font-size: 25px;
     border-radius: 100px;
-    background-color: #0d6efd;
+    background-color: #370A6D;
     border: 0px;
     text-align: center;
     padding: 5px;
-    height: 36px;
-    width: 36px;
+    height: 35px;
+    width: 35px;
+}
+
+footer .fa-linkedin-in:hover{
+    color: #E20000;
+    font-size: 25px;
+    border-radius: 100px;
+    background-color: #370a6d;
+    border: 0px;
+    text-align: center;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
 }
 footer .bloque-whatsapp{
    position: fixed;
@@ -128,14 +229,19 @@ footer .bloque-whatsapp{
 footer .fa-whatsapp{
     font-size: 30px;
 }
+
+#proyectos footer a:hover, #sobre-mi footer a:hover{
+    color: #370a6d;
+}
+
 #inicio .div-cohete{
     height: 300px;
 }
 #inicio img{
-    width: 250px;
+    width: 240px;
 }
 #inicio img:hover{
-    width: 260px;
+    width: 250px;
 }
 #inicio .input-home{
    margin-top: 80px;
@@ -168,6 +274,7 @@ footer .fa-whatsapp{
     height: 250px;
 }
 
+
 @media (max-width: 750px) {/* Para mobile */
     #inicio, #contacto {
         background-image: url('../imagenes/fondo-proyectos.png');
@@ -180,7 +287,7 @@ footer .fa-whatsapp{
     #contacto, #inicio {
         background-image: url('../imagenes/fondo-proyectos.png');
     }
-    footer a {
+    footer a{
         color: #E20000;
     }
     footer .fa-whatsapp {
@@ -193,4 +300,14 @@ footer .fa-whatsapp{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+    footer .fa-linkedin-in{
+        color: white;
+        font-size: 25px;
+        border-radius: 100px;
+        background-color: #E20000;
+        border: 0px;
+        text-align: center;
+        padding: 5px;
+        height: 34px;
+        width: 34px;
 }

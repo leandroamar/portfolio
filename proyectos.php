@@ -1,3 +1,9 @@
+<?php
+$pg= "proyectos";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,32 +21,7 @@
 </head>
 
 <body id="proyectos">
-    <header class="container">
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid px-0">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mb-2 mt-2">
-                        <li class="nav-item px-3 pe-sm-3">
-                            <a class="nav-link py-1 px-3" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link px-3" href="sobre-mi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link px-3 active" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link px-3" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include_once "header.php"; ?>
     <main class="container">
         <div class="row">
             <div class="col-12 pt-4 pb-5">
@@ -127,18 +108,7 @@
                 </div>
             </div>
     </main>
-    <footer class="container my-5">
-        <div class="row">
-            <div class="col-12 col-sm-3"><a href="http://www.facebook.com/leahmathias.amar" target="_blank" rel="facebook"><i
-                        class="fab fa-facebook"></i></a></div>
-            <div class="col-12 col-sm-3"><a href="http://www.instagram.com/leandrito.amar/?hl=es" target="_blank"
-                    rel="instagram"><i class="fab fa-instagram"></i></a></div>
-            <div class="col-12 col-sm-3"><a href="mailto:leandro.mathias.amar@gmail.com">leandro.mathias.amar@gmail.com</a></div>
-        </div>
-        <div class="bloque-whatsapp">
-            <a href="https://wa.me/qr/6MKMN532Q5KCK1" target="_blank"><i class="fab fa-whatsapp pb-4 pt-3 px-3"></i></a>
-        </div>
-    </footer>
+    <?php include_once "footer.php"; ?>
 </body>
 <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>
