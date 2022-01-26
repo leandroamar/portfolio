@@ -197,7 +197,7 @@ $pg= "sobre-mi";
         <section id="formacion" class="container">
             <div class="row">
                 <div class="col-12 pt-5 pb-4">
-                    <h2><i class="fas fa-graduation-cap"></i> Formación acádémica</h2>
+                    <h2><i class="fas fa-graduation-cap"></i> Formación académica</h2>
                 </div>
             </div>
             <div class="row shadow bg-white rounded p-1">
